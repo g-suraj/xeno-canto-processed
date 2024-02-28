@@ -6,8 +6,6 @@ multimedia files to construct a database of:
 * A set of birds that exist in the UK/Ireland,
 with an identifiable species key
 * For each bird, a set of birdsongs
-
-
 """
 
 import csv
@@ -37,6 +35,10 @@ OCCURRENCE_FIELDS = [
     "level1Name",
     "level2Name",
 ]
+
+IMAGE_OVERRIDES = {
+    "2481240": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sandwich_tern_%28Thalasseus_sandvicensis%29_in_flight_with_lesser_sand_eel_%28Ammodytes_tobianus%29_Brownsea.jpg" # Sandwich Tern
+}
 
 multimedia_dict = {}
 data_dict = {}
@@ -80,6 +82,9 @@ if __name__ == "__main__":
                     ]
                 except:  # pylint: disable=bare-except
                     pass
+
+                if species_key in IMAGE_OVERRIDES:
+                    data_dict[species_key]["_pictures"] = [IMAGE_OVERRIDES[species_key]]
 
             if "_occurrences" in data_dict[species_key]:
                 data_dict[species_key]["_occurrences"].append(this_occurrence)
