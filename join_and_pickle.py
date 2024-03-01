@@ -78,13 +78,13 @@ if __name__ == "__main__":
                         timeout=5,
                     )
                     data_dict[species_key]["_pictures"] = [
-                        item["identifier"] for item in response.json()["results"]
+                        {"src": item["identifier"], "rightsHolder": item["rightsHolder"]} for item in response.json()["results"] if item["type"] == "StillImage"
                     ]
                 except:  # pylint: disable=bare-except
                     pass
 
-                if species_key in IMAGE_OVERRIDES:
-                    data_dict[species_key]["_pictures"] = [IMAGE_OVERRIDES[species_key]]
+                # if species_key in IMAGE_OVERRIDES:
+                #     data_dict[species_key]["_pictures"] = [IMAGE_OVERRIDES[species_key]]
 
             if "_occurrences" in data_dict[species_key]:
                 data_dict[species_key]["_occurrences"].append(this_occurrence)
