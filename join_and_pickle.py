@@ -51,11 +51,15 @@ IMAGE_OVERRIDES: dict[str, Image] = {
     },
     "2493084": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/349694073/original.jpg",
-        "rightsHolder": "Sourav Halder ",
+        "rightsHolder": "Sourav Halder",
     },
+    "2497921": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Flickr_-_Rainbirder_-_Barn_Owl_%28Tyto_alba%29.jpg",
+        "rightsHolder": "Steve Garvie",
+    },
+    # "2497921": "https://www.gbif.org/species/2497921",
     # "2481240": "https://www.gbif.org/species/2481240",
     # "2474628": "https://www.gbif.org/species/2474628",
-    # "2497921": "https://www.gbif.org/species/2497921",
     # "5229380": "https://www.gbif.org/species/5229380",
     # "5231438": "https://www.gbif.org/species/5231438",
     # "9274012": "https://www.gbif.org/species/9274012",
