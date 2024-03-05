@@ -57,6 +57,10 @@ IMAGE_OVERRIDES: dict[str, Image] = {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/Flickr_-_Rainbirder_-_Barn_Owl_%28Tyto_alba%29.jpg",
         "rightsHolder": "Steve Garvie",
     },
+    "2482492": {
+        "src": "https://api.gbif.org/v1/image/cache/fit-in/500x/occurrence/4507988210/media/e0211ae006eb0f3688dd4d3b833f7e56",
+        "rightsHolder": "Marianne Skov Jensen"
+    }
     # "2497921": "https://www.gbif.org/species/2497921",
     # "2481240": "https://www.gbif.org/species/2481240",
     # "2474628": "https://www.gbif.org/species/2474628",
@@ -75,7 +79,6 @@ IMAGE_OVERRIDES: dict[str, Image] = {
     # "6100954": "https://www.gbif.org/species/6100954",
     # "2494177": "https://www.gbif.org/species/2494177",
     # "2474156": "https://www.gbif.org/species/2474156",
-    # "2482492": "https://www.gbif.org/species/2482492",
     # "2490303": "https://www.gbif.org/species/2490303",
     # "8109681": "https://www.gbif.org/species/8109681",
     # "2497266": "https://www.gbif.org/species/2497266",
